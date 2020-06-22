@@ -15,12 +15,8 @@ Settings =
 
 	max_doc_length: 2 * 1024 * 1024 # 2mb
 
-if process.env['MONGO_CONNECTION_STRING']?
-	Settings.mongo.url = process.env['MONGO_CONNECTION_STRING']
-else if process.env['MONGO_HOST']?
-	Settings.mongo.url = "mongodb://#{process.env['MONGO_HOST']}/sharelatex"
-else
-	Settings.mongo.url = "mongodb://127.0.0.1/sharelatex"
+Settings.mongo.url = "mongodb://172.17.0.1:27017/sharelatex"
+
 
 if process.env['AWS_ACCESS_KEY_ID']? and process.env['AWS_SECRET_ACCESS_KEY']? and process.env['AWS_BUCKET']?
 	Settings.docstore.s3 =

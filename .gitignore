@@ -1,7 +1,6 @@
 node_modules
-app/js/
-test/unit/js
-test/acceptance/js
-app.js
+app/coffee/
+test/*
+app.coffee
 **/*.map
 forever
