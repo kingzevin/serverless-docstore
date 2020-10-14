@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "A CRUD API for handling text documents in projects",
   "author": "ShareLaTeX <team@sharelatex>",
-  "main": "app.js",
+  "main": "handler.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/sharelatex/docstore-sharelatex.git"
